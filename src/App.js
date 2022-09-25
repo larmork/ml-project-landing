@@ -6,6 +6,7 @@ import PostList from "./components/PostsList";
 import "./styles/App.css";
 import MyButton from "./components/UI/Button/MyButton";
 import MyInput from "./components/UI/input/MyInput";
+import { isPropertySignature } from "typescript";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -18,7 +19,11 @@ function App() {
   const addNewPost = (e) => {
     e.preventDefault()
     const newPost = () => {
+      id: Date.now(),
+      title,
+      body
     }
+    setPosts([...posts, newPost])
   }
   return (
     <div className="App">
