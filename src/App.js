@@ -6,7 +6,7 @@ import PostList from "./components/PostsList";
 import "./styles/App.css";
 import MyButton from "./components/UI/Button/MyButton";
 import MyInput from "./components/UI/input/MyInput";
-import { isPropertySignature } from "typescript";
+import PostForm from "./components/PostForm";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -14,32 +14,11 @@ function App() {
     {id: 2, title: 'Go Lang', body: 'Description'},
     {id: 3, title: 'C++', body: 'Description'}
   ])
-  const [title, setTitle] = useState('')
-  const [body, setBody] = useState('')
-  const addNewPost = (e) => {
-    e.preventDefault()
-    const newPost = () => {
-      id: Date.now(),
-      title,
-      body
-    }
-    setPosts([...posts, newPost])
-  }
+  const [post, setPost] = useState({title: '', body: ''})
+
   return (
     <div className="App">
-      <form>
-        <MyInput
-        value={title}
-        onChange={e => setTitle(e.target.value)}
-        type="text" 
-        placeholder="Post name"/>
-        <MyInput
-        value={body}
-        onChange={e => setBody(e.target.value)}
-        type="text" 
-        placeholder="Post description"/>
-        <MyButton onClick={addNewPost}> Create post </MyButton>
-      </form>
+      <PostForm/>
       <PostList posts={posts} title="Post list"/>
     </div>
   );
