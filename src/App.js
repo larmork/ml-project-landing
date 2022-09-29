@@ -4,7 +4,9 @@ const App = (props) => {
 
     return(
         <div>
-            
+            <HeaderBold>
+                
+            </HeaderBold>
         </div>
     );
 }

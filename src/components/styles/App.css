@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header-bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
