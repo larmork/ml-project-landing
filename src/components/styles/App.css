@@ -2,13 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
-.header-bold {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 35px;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+.App-header {
+    background-color: whitesmoke;
+    min-height: 10vh;
+    text-align: center;
+}
+.App-footer {
+    margin-top: 865px;
+    background-color: lightsteelblue;
+    min-height: 10vh;
+    justify-content: center;
+}
+.App-logo-header {
+    margin-top: 15px;
+    min-height: 4vw;
+    max-height: 6vw;
+    pointer-events: none;
+    color-scheme: #7D7D7D;
   }
-
+  .Social-logo {
+    height: 32px;
+    width: 32px;
+    max-height: 8vw;
+    max-width: 8vw;
+    min-height: 20px;
+    min-width: 20px;
+    pointer-events: none;
+    justify-self: center;
+    fill: #7D7D7D;
+  }
