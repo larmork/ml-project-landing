@@ -2,7 +2,7 @@
 
 
 ## Available Scripts
-
+This scripts you can ran in project directory
 
 ### `npm start`
 
