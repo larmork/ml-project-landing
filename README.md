@@ -12,5 +12,4 @@ This scripts you can ran in project directory
 
 ### `npm run eject`
 
-# ml-project-landing
 
